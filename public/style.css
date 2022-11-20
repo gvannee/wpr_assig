@@ -1,0 +1,284 @@
+/* TODO(you): Write the CSS to finish the assignment! */
+
+body {
+    margin: auto;
+    width: 700px;
+    font-family: "Proxima Nova", "Helvetica", "Arial", sans-serif;
+    font-size: 18px;
+    color: #222222;
+    padding-bottom: 10px;
+}
+
+header {
+    border-bottom: #ccc 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+#course-name {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ee3322;
+}
+
+
+.stack-circle {
+    height: 50px;
+    width: 50px;
+    background-color: #ffee00;
+    border-radius: 100%;
+    transform: rotate(-30deg);
+    display: inline-block;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Proxima Nova', 'Helvetica', 'Arial', sans-serif;
+}
+
+#quiz-name{
+    background-position: center;
+    max-width: 700px;
+    height: 425px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/background.jpg);
+    background-size: cover;
+}
+
+#quiz-name h1{
+    background-color: rgba(255, 255, 255, 0.9);
+    font-family: 'Pangolin', 'Trebuchet MS', cursive;
+    font-size: 60px;
+    color: black;
+    padding: 10px;
+    max-width: 75%;
+}
+
+#author{
+    text-align: center;
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+#para1 {
+    margin: 18px 0px 18px 0px;
+}
+
+#para2 {
+    margin: 18px 0px 18px 0px;
+}
+
+#para3 {
+    margin: 18px 0px 18px 0px;
+    padding-bottom: 18px;
+}
+
+#box-start {
+    padding-top: 18px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border: 1px solid #dcdcdc;
+    margin-bottom: 18px;
+}
+
+#box-start h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 18px;
+}
+
+#box-start p{
+    margin-top: 18px;
+    margin-bottom: 18px;
+    display: block;
+}
+
+#btn-start{
+    background-color: #2196F3;
+    color: white;
+    margin-top: 18px;
+    padding: 18px;
+    margin-bottom: 18px;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Proxima Nova', 'Helvetica', 'Arial', sans-serif;
+    text-decoration: none;
+    border: 0;
+    font-size: 18px;
+}
+
+#btn-try-again{
+    background-color: #2196F3;
+    color: white;
+    margin-top: 18px;
+    padding: 18px;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Proxima Nova', 'Helvetica', 'Arial', sans-serif;
+    text-decoration: none;
+    border: 0;
+    font-size: 18px;
+}
+
+#btn-start:hover, #btn-try-again:hover {
+    background-color: #0d8bf2;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.question-text {
+    margin-bottom: 30px;
+}
+
+input.option-selected {
+    margin-right: 15px;
+}
+
+label {
+    margin: 1px 0px;
+    background-color: #f1f1f1;
+    display: block;
+    border-bottom: 1px;
+    position: relative;
+}
+
+input{
+    margin: 0;
+    margin-left: 15px;
+}
+
+label:hover{
+    background-color: #ddd;
+}
+
+#box-submit {
+    display: block;
+    text-align: center;
+    background-color: #f1f1f1;
+    border: 1px thick #dcdcdc;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+#btn-submit {
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    padding: 18px;
+    display: inline-block;
+    text-decoration: none;
+    border: 0;
+    font-size: 18px;
+    font-family: 'Proxima Nova', 'Helvetica', 'Arial', sans-serif;
+}
+
+
+
+#btn-submit:hover {
+    background-color: #46a049;
+}
+
+.correct-answer {
+    background-color: #d4edda !important;
+}
+
+.wrong-answer{
+    background-color: #f8d7da !important;
+}
+
+
+#box-result {
+    padding-bottom: 24px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border: 1px solid #dcdcdc;
+}
+
+#correct-ans{
+    font-size: 24px;
+}
+
+#correct-percent{
+    font-size: 24px;
+}
+
+.option{
+    display: inline-block;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #f1f1f1;
+    margin: 1px 0;
+}
+
+.option-selected,
+.option-correct,
+.option:hover {
+    background-color: #ddd;
+}
+
+.option-correct::after,
+.correct-answer::after{
+    /* Position */
+    position: absolute;
+    /* Content, alignment and color */
+    content: "Correct answer";
+    padding: 5px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    top: 10px;
+
+}
+
+#box-result{
+    padding-top: 18px;
+    margin-top: 36px;
+}
+
+#res{
+    margin-top: 18px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.wrong-answer::after{
+    /* Position */
+    position: absolute;
+    /*Content and alignment*/
+    content: "Your answer";
+    padding: 5px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    top: 10px;
+}
+
+
+@media (max-width: 500px) {
+    #stack{
+        display: none;
+    }
+
+}
+
+@media (max-width: 700px){
+    body{
+        max-width: 95%;
+    }
+}
+
+.pAnswer {
+    display: inline;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 15px;
+}
